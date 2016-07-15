@@ -1,0 +1,25 @@
+$green:             rgb(2, 164, 110);
+$dark:              rgb(26, 26, 26);
+$grey:              rgb(153, 153, 153);
+
+$dark-bg:           rgb(27, 31, 32);
+$dark-bg-highlight: rgb(33, 37, 37);
+$shadow-bg:         rgb(238, 238, 238);
+$alt-bg:            rgb(245, 245, 245);
+$white-bg:          rgb(255, 255, 255);
+
+$positive-act:      rgb(88, 149, 273);
+$warning-act:       rgb(254, 209, 70);
+$negative-act:      rgb(223, 104, 64);
+
+.green {
+  color: $green !important;
+}
+
+.dark {
+  color: $dark !important;
+}
+
+.grey {
+  color: $grey !important;
+}

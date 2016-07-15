@@ -1,0 +1,61 @@
+@font-face {
+    font-family: Apercu-Regular;
+    src: url('fonts/Apercu_Regular/Apercu_Regular.otf');
+}
+@font-face {
+    font-family: Apercu-Mono;
+    src: url('fonts/Apercu_Mono/Apercu_Mono.otf');
+}
+@font-face {
+    font-family: Apercu-Medium-Italic;
+    src: url('fonts/Apercu_Medium_Italic/Apercu_Medium_Italic.otf');
+}
+@font-face {
+    font-family: Apercu-Medium;
+    src: url('fonts/Apercu_Medium/Apercu_Medium.otf');
+}
+@font-face {
+    font-family: Apercu-Light-Italic;
+    src: url('fonts/Apercu_Light_Italic/Apercu_Light_Italic.otf');
+}
+@font-face {
+    font-family: Apercu-Light;
+    src: url('fonts/Apercu_Light/Apercu_Light.otf');
+}
+@font-face {
+    font-family: Apercu-Italic;
+    src: url('fonts/Apercu_Italic/Apercu_Italic.otf');
+}
+@font-face {
+    font-family: Apercu-Bold-Italic;
+    src: url('fonts/Apercu_Bold_Italic/Apercu_Bold_Italic.otf');
+}
+@font-face {
+    font-family: Apercu-Bold;
+    src: url('fonts/Apercu_Bold/Apercu_Bold.otf');
+}
+
+h1 {
+  font-family: Apercu-Mono, Helvetica, sans-serif !important;
+  font-weight: bold !important;
+  font-size: 3rem !important;
+}
+
+h2 {
+  font-family: Apercu-Mono, Helvetica, sans-serif !important;
+  font-weight: normal !important;
+  font-size: 2.5rem !important;
+}
+
+h3 {
+  font-family: Apercu-Mono, Helvetica, sans-serif !important;
+  font-weight: normal !important;
+  font-size: 2rem !important;
+  text-transform: uppercase !important;
+}
+
+h4 {
+  font-family: Apercu-Mono, Apercu-Regular, Helvetica, sans-serif !important;
+  font-weight: normal !important;
+  font-size: 2rem !important;
+}
