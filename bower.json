@@ -1,0 +1,20 @@
+{
+  "name": "fablabsio-design",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "hiromipaw <silvia@nopressure.co.uk>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/fablabbcn/fablabsio-design",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "bootstrap-sass-official#^3.3.6"
+  }
+}
