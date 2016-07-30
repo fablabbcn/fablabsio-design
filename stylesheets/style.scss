@@ -89,6 +89,7 @@ h2 {
   font-family: Apercu-Mono, Helvetica, sans-serif !important;
   font-weight: normal !important;
   font-size: 2.5rem !important;
+  padding-bottom: 1em !important;
 }
 
 h3 {
@@ -129,14 +130,21 @@ i {@include border-radius(50%);}
 
 .img-rounded { @include border-radius(50%); width:70px; height:70px; }
 
+.activations {@include border-radius (4px)}
+
 
 /* img */
+
+img{
+	width: 100%;
+}
 
 .img-thumbnail {
     padding: 0;
     line-height: 0;
     border: none;
     border-radius:0;
+    width:100%;
 }
 
 /* STYLES */
@@ -188,6 +196,11 @@ body{
 
 #second {
 
+	.img-rounded{
+		width: 50px;
+		height: 50px;
+		padding: 0;
+	}
 	.btn{
 		padding: 10px 14px 8px 15px;
 		margin-top: 0;
@@ -214,7 +227,7 @@ body{
 		&:hover {text-decoration:none; text-transform: none; box-shadow: none;};
 			img{
 				display: inline;
-				padding-right: 1em;
+				margin-right: 0.5em;
 			}
 	}
 	.col-lg-4 {
@@ -312,9 +325,20 @@ main {
 	.head {
 		padding-top: 0em;
 		padding-bottom: 1em;
+
 			h1 {
 				margin-top: 0;
 			}
+
+			h6{
+				color: $light-grey;
+				text-transform: uppercase;
+				padding-top: 2em;
+				text-align: right;
+				padding-right: 10px;
+
+							}
+			
 			.row{
 				padding-top: 3em;
 			}
@@ -330,12 +354,29 @@ main {
 				color: white;				
 				&:hover {background-color: $dark; border-color: $dark; color: white;};
 			}
-	}
-	p{
-		font-size: 1.8rem!important;
-		line-height: 28px;
+			ul{
+				margin-bottom: 0em;
+			}
 
+			li{
+				margin-bottom: 0em;
+				text-align: right;
+			}
 	}
+		.description {
+			p{
+				font-size: 1.7rem !important;
+				line-height: 28px;
+			}
+		}
+		.disabled {
+			p{
+				padding-top: 2em;
+			}
+		}
+
+
+
 	.info{
 		margin-top: 3em;
 		.col-md-5 {
@@ -343,6 +384,7 @@ main {
 		}
 
 		li {
+
 			.special{
 				padding: 2% 0%;
 				width:122px;
@@ -362,7 +404,55 @@ main {
 	}
 }
 
+.status{
+			padding-top: 2em;
+				ul{
+					margin: 0;
+				}
 
+			p{
+				color: $grey;
+				padding-top: 0.5em;
+				em{
+					font-style: normal;
+					color: $dark-bg;
+					padding-left: 5px;
+					padding-right: 3em;
+				}
+			}
+			span{
+			display: inline-block;
+						font-size: 16px;
+						text-decoration: none;
+						font-style: normal;
+						letter-spacing: 1;
+						vertical-align: middle;
+						line-height: 20em;
+						padding-bottom: 7px;
+						padding-right: 8px;
+
+				.material-icons {
+					font-size: 20px;
+					i{
+						padding-top: 5px;
+					}
+
+				}
+			}
+			img {
+				width:18px;
+				height: 18px;
+				margin-right: 5px;
+			}
+
+		}
+
+
+/* STEPS */
+
+#steps{
+	padding-top: 2em;
+}
 
 
 .detail{
@@ -724,6 +814,70 @@ main {
 }
 
 
+/* LABS */
+
+#labs {
+	margin-top:0;
+	padding-top: 4em;
+	padding-bottom: 6em;
+
+	button {
+		float: left;
+		
+		.profile{
+			display: block;
+			float: left;
+			padding-right: 2em;
+			.worker {
+				border: 2px solid $green;
+			}
+			.student {
+				border: 2px solid $orange;
+			}
+			
+		}
+		.content {
+			float: left;
+			display: inline-block;
+			h5 {
+				padding-top: 5px;
+				line-height: 20px;
+				color: $dark;
+			}
+			p{
+				color: $green;
+				padding: 0;
+				margin: 0;
+			}
+			h5 {
+				margin: 0;
+			}
+		
+			a{
+				text-decoration: none;
+				color: $grey;
+					span {padding: 5px;}
+				&:hover {color:$green;};
+			}
+			li{
+				padding-right: 5%;
+			}
+		}
+		&:hover {
+			h5, p{
+				color: $green;
+			}
+
+
+		}
+		.material-icons {
+			font-size:14px;
+		}
+
+	}
+}
+
+
 /* NEARBY */
 
 #nearby {
@@ -943,7 +1097,6 @@ a {
 					font-style: normal;
 					letter-spacing: 1;
 					vertical-align: middle;
-					line-height: 20em;
 					padding-bottom: 7px;
 					padding-right: 8px;
 				}
@@ -972,6 +1125,86 @@ a {
 
 }
 
+.btn-tag{
+
+	background-color: $alt-bg;
+	padding: 0.5em;
+	color: $green;
+	text-transform: lowercase;
+	margin-right: 0.5em;
+	padding-right: 0.8em;
+	padding-left: 0.8em;
+}
+
+
+.activations{
+	border: 2px solid $alt-bg;
+	padding: 2em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	background-color: $alt-bg;
+}
+
+.btn-interaction{
+	text-transform: none;
+	background-color: transparent;
+	color: $green;
+	border: 2px solid transparent;
+	padding-right: 0;
+	margin-bottom: 0px;
+
+
+	&:hover {background-color:white; color: $green; border: 2px solid $green};
+
+
+	span{
+	
+	}
+		em{
+			text-transform: none;
+			font-style: normal;
+			padding: 12px 10px;
+			border: 2px solid $green;
+			border-radius: 4px;
+			background-color: $green;
+			color: white;
+			margin-left: 10px;
+		}
+}
+
+.btn-social{
+	text-transform: none;
+	vertical-align: bottom;
+	background-color: transparent;
+	color: $green-dark;
+	padding: 0;
+			margin-bottom: 10px;
+
+	img{
+		width: 26px;
+		height: 26px;
+	}
+
+
+
+	span{
+	
+	}
+	em{
+		text-transform: none;
+		font-style: normal;
+		padding: 12px 10px;
+		border: 2px solid $alt-bg;
+		border-radius: 4px;
+		background-color: $alt-bg;;
+		color: $green;
+		margin-left: 0px;
+
+
+		&:hover {background-color:$light-grey; border-color: $light-grey;};
+	}
+}
+
 	.disabled{
 		color: $grey;
 	}
@@ -988,36 +1221,37 @@ a {
 
 
 
-/* KEEPING ROUNDED ICONS STYLE 
+KEEPING ROUNDED ICONS STYLE 
 
+.interact {
+	.material-icons {
+	  font-family: 'Material Icons';
+	  color: $green;
+	  border: 2px solid $green;
+	  padding: 8px;
+	  margin: 6px;
+	  font-weight: normal;
+	  font-style: normal;
+	  font-size: 24px;  /* Preferred icon size */
+	  display: inline-block;
+	  line-height: 1;
+	  text-transform: none;
+	  letter-spacing: normal;
+	  word-wrap: normal;
+	  white-space: nowrap;
+	  direction: ltr;
+	  &:hover {color:white; background-color: $green;}
 
-.material-icons {
-  font-family: 'Material Icons';
-  color: $green;
-  border: 2px solid $green;
-  padding: 8px;
-  margin: 6px;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;  /* Preferred icon size */
-  /*display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  &:hover {color:white; background-color: $green;}
-/*
-  /* Support for all WebKit browsers. */
- /* -webkit-font-smoothing: antialiased;*/
-  /* Support for Safari and Chrome. */
- /*text-rendering: optimizeLegibility;*/
+	  /* Support for all WebKit browsers. */
+		-webkit-font-smoothing: antialiased;
+	  /* Support for Safari and Chrome. */
+	 	text-rendering: optimizeLegibility;
 
-  /* Support for Firefox. */
-  /*-moz-osx-font-smoothing: grayscale;
+	  /* Support for Firefox. */
+	  	-moz-osx-font-smoothing: grayscale;
 
-  /* Support for IE. */
-  /*font-feature-settings: 'liga';
+	  /* Support for IE. */
+	  	font-feature-settings: 'liga';
+	}
 }
-*/
+	
