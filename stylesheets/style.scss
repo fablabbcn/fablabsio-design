@@ -312,7 +312,7 @@ body{
 
 
 main {
-	padding-bottom: 4em;
+	padding-bottom: 0em;
 	.profile {
 		float: left;
 		display: inline-block;
@@ -328,6 +328,7 @@ main {
 
 			h1 {
 				margin-top: 0;
+				font-size: 1.8em !important;
 			}
 
 			h6{
@@ -371,7 +372,7 @@ main {
 		}
 		.disabled {
 			p{
-				padding-top: 2em;
+				padding-top: 0em;
 			}
 		}
 
@@ -401,6 +402,34 @@ main {
 
 			}
 		}
+	}
+}
+
+.activity{
+	background-color: $alt-bg;
+	height: auto;
+	padding: 2em;
+
+	hr{
+		padding-top: 0em;
+		padding-bottom: 0em;
+		margin-top: 1.3em;
+		margin-bottom: 1.3em;
+	}
+	h3{
+		padding-top: 0;
+		line-height: 0;
+		padding-bottom: 1em;
+		font-size: 1em !important;
+	}
+
+	p {
+		margin: 0;
+	}
+	.disabled {
+		text-transform: uppercase;
+		font-size: 12px !important;
+		letter-spacing: 1px;
 	}
 }
 
@@ -1140,7 +1169,7 @@ a {
 .activations{
 	border: 2px solid $alt-bg;
 	padding: 2em;
-	margin-top: 2em;
+	margin-top: 0em;
 	margin-bottom: 2em;
 	background-color: $alt-bg;
 }
